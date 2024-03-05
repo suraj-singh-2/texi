@@ -1,0 +1,33 @@
+#cunter{
+    width: 100%;
+    background: $dark-white;
+    padding: 100px 0;
+    .cunter-main{
+        width: 100%;
+        column-gap: 55px;
+        .conter-box{
+            width:20%;
+            text-align: center;
+            .cunt{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2, span{
+                    font-size: $xx-laege;
+                    font-weight: $font-medium;
+                    font-family: $secondary-font;
+                    color: $primary;
+                    line-height: 65px;
+                    padding-bottom: 22px;
+                }
+            }
+            h5{
+                font-size:$medium;
+                font-family: $secondary-font;
+                color: #54595F;
+                font-weight: $font-medium;
+            }
+           
+        }
+    }
+}

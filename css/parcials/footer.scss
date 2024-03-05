@@ -1,0 +1,121 @@
+#footer{
+    width: 100%;
+    background: $white;
+    padding-top: 84px;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: $primary;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 92px;
+        top: auto;
+    }
+    .footer-main{
+        width: 100%;
+        .footer-box{
+            width: 25%;
+            padding-bottom: 56px;
+            .footer-logo{
+                img{
+                    max-width: 55px;
+                    padding-bottom: 25px;
+                }
+            }
+            p{
+                max-width: 83%;
+                color:$gray;
+                padding-bottom: 30px;
+            }
+            ul{
+                column-gap: 16px;
+                li{
+                  
+                    a{
+                        &:hover{
+                            background:$primary;
+                            transition: all ease 0.5s;
+                        }
+                    }
+                   
+                }
+            }
+        }
+        .footer-content{
+            width: 25%;
+          
+            h3{
+                font-size: $x-small;
+                line-height: 24px;
+                color: $black;
+                font-weight: $font-regular;
+                padding-bottom: 33px;
+            }
+            ul{
+                li{
+                    font-size: $small;
+                    padding-bottom: 4px;
+                    color:$gray;
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                    
+                    i{
+                        color: $primary;
+                        padding-right: 5px;
+                    }
+                    a{
+                        font-size: $small;
+                        font-weight:$font-regular;
+                        font-family:$secondary-font;
+                        line-height: 28px;
+                        color: $secondary;
+                        &:hover{
+                            color:$primary;
+                            transition: all ease 0.5s;
+                            margin-left: 3px;
+
+                        }
+
+                    }
+                    &.contact{
+                        max-width: 90%;
+                        padding-bottom: 21px;
+                    }
+                    &.email{
+                        padding-bottom: 20px;
+                       a{
+                        color: $gray;
+                       }
+                    }
+                    .tel{
+                       
+                        a{
+                            color: $gray;
+                          
+                           }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer-bottom{
+        padding-top: 35px;
+        text-align: center;
+        h5{
+            font-size: $small;
+            color: $gray;
+            font-family: $font-regular;
+            font-weight: $font-regular;
+            padding-bottom: 37px;
+        }
+    }
+
+}

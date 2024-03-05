@@ -1,0 +1,165 @@
+#banner {
+    width: 100%;
+    background: $white;
+    position: relative;
+
+    .banner-img{
+        position: relative;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      transform: translate(-50%, -50%);
+
+        .banner-content {
+            h3 {
+                padding-bottom: 25px;
+            }
+
+            h1 {
+                max-width: 44%;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 1);
+                max-width: 40%;
+                padding-top: 22px;
+                padding-bottom: 29px;
+            }
+
+            a {
+                font-size: $small;
+                font-weight: $font-regular;
+                line-height: 28px;
+                font-family: $secondary-font;
+                background: $primary;
+                color: $white;
+                border-radius: 30px;
+                padding: 16px 37px;
+                border: 1px solid $primary;
+                transition: all ease 0.5s;
+
+                &:hover {
+                    background: transparent;
+                    transition: all ease 0.5s;
+                }
+            }
+        }
+
+        .banner-wrapper {
+            margin-top: 96px;
+            margin-left: -15px;
+            margin-right: -15px;
+                &:hover .slick-prev,  &:hover .slick-next{
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all ease 0.5s;
+                    cursor: pointer;
+                }
+            .slick-prev {
+                width: 50px;
+                height: 50px;
+                background: $primary;
+                border-radius: 50%;
+                position: absolute;
+                top: 85px;
+                left: -61px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                font-size: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all ease 0.5s;
+
+                &::after {
+                    content: "\f104";
+                    font-family: 'Fontawesome';
+                    position: absolute;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+              
+            }
+
+            .slick-next {
+                width: 50px;
+                height: 50px;
+                background: $primary;
+                border-radius: 50%;
+                position: absolute;
+                top: 85px;
+                right: -50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                font-size: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all ease 0.5s;
+
+                &::before{
+                    content:'\f105';
+                    font-family: 'Fontawesome';
+                    position: absolute;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .slick-slide {
+                padding: 0 15px;
+            }
+
+            .banner-hotline-main {
+                .banner-hotline {
+                    // width: 100%;
+                    // border-radius: 20px;
+                    // background: $white;
+                    // padding: 13px 43px 64px 13px;
+                    @extend %banner-hotline;
+                    .banner-icon img {
+                        max-width: 32px;
+                        min-height: 24px;
+                    }
+
+                    h3 {
+                        color: $black;
+                        padding-top: 17px;
+                    }
+
+                    p {
+                        padding-top: 16px;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+
+}

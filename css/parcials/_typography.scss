@@ -1,0 +1,83 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-wrep {
+    flex-wrap: wrap;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.img-box {
+    @include img-boxProperties(100%, 100%, hidden)
+}
+
+.img-box img {
+    @include imgProperties(100%, 100%, cover, center, 0.5s)
+}
+
+a,
+button {
+
+    @include buttonProperties(none, 0, $primary, 0.5s, inline-block)
+}
+.social-media{
+    @include social-mediaProperties(40px,40px,50%,$black,$white,flex,center,center,all ease 0.5s)
+}
+
+h1 {
+    @include fontProperties($x-large, 48px, 800, $font-inter, $white )
+}
+
+h2 {
+    @include fontProperties($large, 23px, $font-semibold, $font-inter, $black)
+}
+
+h3 {
+    @include fontProperties($regular, 25px, $font-medium, $secondary-font, $white)
+}
+
+p {
+    @include fontProperties($small, 24px, $font-light, $secondary-font, $black);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:$primary;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:$white;
+    border-radius: 5px;
+    
+}

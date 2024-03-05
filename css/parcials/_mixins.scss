@@ -1,0 +1,46 @@
+@mixin fontProperties($font-size, $line-height, $font-weight, $font-family, $color) {
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $color;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+@mixin buttonProperties($text-decoration, $border, $color, $transition,$display ){
+    text-decoration: $text-decoration;
+    border: $border;
+    color: $color;
+    transition: $transition;
+    display: $display;
+}
+@mixin img-boxProperties($width,$height, $overflow){
+    width: $width;
+    height: $height;
+    overflow: $overflow;
+}
+
+@mixin imgProperties($width, $height, $object-fit,$object-position, $transition){
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+    object-position: $object-position;
+    transition: $transition;
+}
+
+@mixin social-mediaProperties($width, $height, $border-radius, $background, $color, $display, $align-items, $justify-content, $transition){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background: $background;
+    color: $color;
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    transition: $transition;
+}
+
+@mixin diplayProprties($display, $align-items, $justify-content, $flex-wrap) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-wrap: $flex-wrap;
+}

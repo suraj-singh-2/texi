@@ -1,0 +1,50 @@
+/* Back To Top */
+.back-to-top {
+    transition: all ease 0.5s;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #1299C5;
+    font-size: 24px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: #1299C5;
+    color: #fff;
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Page Scrollbar */
+.progressbar {
+    width: 100%;
+    height: 10px;
+    z-index: 9;
+    transition: all .6s ease;
+    background: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.progressbar>span {
+    background: #1299C5;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

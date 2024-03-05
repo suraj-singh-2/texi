@@ -1,0 +1,39 @@
+#service {
+    width: 100%;
+    background: $white;
+    padding-top: 108px;
+    padding-bottom: 115px;
+
+    .service-main {
+        flex-wrap: wrap;
+        gap: 30px;
+        .service-card {
+            width: calc(33.33% - 20px);
+            background: $white;
+            padding: 15px 5px;
+
+            .service-card-img img {
+                max-width: 174px;
+                margin-bottom: 30px;
+            }
+
+            span {
+                color: $primary;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                color: $black;
+                padding-bottom: 11px;
+                padding-top: 10px;
+            }
+            p{
+                color: $black;
+                font-size:$small-x;
+                font-weight: $font-regular;
+            }
+        }
+    }
+
+
+}
